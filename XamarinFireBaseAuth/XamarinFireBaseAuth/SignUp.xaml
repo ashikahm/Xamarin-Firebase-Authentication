@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFireBaseAuth.SignUp">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Enter Name" x:Name="Name" />
+            <Entry Placeholder="Emaail" x:Name="Email" />
+            <Entry Placeholder="Password" IsPassword="True" x:Name="password1" />
+            <Entry Placeholder="Confirm Password" IsPassword="True" x:Name="Confirmpassword" />
+            <Button Text="SignUp" HorizontalOptions="Center" BackgroundColor="Beige" WidthRequest="100" HeightRequest="60" CornerRadius="20" Clicked="signUp_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFireBaseAuth.MainPage">
+    <Grid Padding="10" VerticalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0" VerticalOptions="Center">
+            <Image Source="logo" WidthRequest="100" HeightRequest="100"/>
+            <Label Text="Login Here" FontFamily="Cabin" TextColor="Black" FontSize="40" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+        <StackLayout Grid.Row="1" Spacing="20">
+            <Entry Placeholder="Enter Name" x:Name="Email" />
+            <Entry Placeholder="Password" IsPassword="True" x:Name="passwords" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+                <Button Text="Login" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold" FontSize="Medium" BackgroundColor="#5F9DF7" WidthRequest="120" HeightRequest="50" CornerRadius="20" Clicked="Login_Button"/>
+                <Button Text="Forgot Password" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold" FontSize="Medium" BackgroundColor="#5F9DF7" WidthRequest="120" HeightRequest="60" CornerRadius="20" Clicked="Forgot_Password"/>
+            </StackLayout>
+            <Label Text="New User?"/>
+            <Button Text="Register" HorizontalOptions="Center" BackgroundColor="#5F9DF7" TextColor="White" FontAttributes="Bold" FontSize="Medium" WidthRequest="120" HeightRequest="50" CornerRadius="20" Clicked="Signup_Button"/>
+        </StackLayout>
+        
+    </Grid>
+
+</ContentPage>
